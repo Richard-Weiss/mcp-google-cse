@@ -7,6 +7,8 @@ You may also combine it with other tools to enable some kind of "deep search" or
 
 **The free quota is 100 searches (1 tool call == 1 search) per day, if you don't want to set up billing and this is insufficient for your use case, you should consider using another server.**
 
+<a href="https://glama.ai/mcp/servers/mieczol4lv"><img width="380" height="200" src="https://glama.ai/mcp/servers/mieczol4lv/badge" alt="Google Custom Search Engine Server MCP server" /></a>
+
 ## Available Tools
 
 - `google_search` - Searches the custom search engine using the search term and returns a list of results containing the title, link and snippet of each result.
