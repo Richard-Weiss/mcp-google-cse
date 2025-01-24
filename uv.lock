@@ -274,7 +274,7 @@ wheels = [
 
 [[package]]
 name = "mcp-google-cse"
-version = "0.1.0"
+version = "0.1.4"
 source = { editable = "." }
 dependencies = [
     { name = "google-api-python-client" },
