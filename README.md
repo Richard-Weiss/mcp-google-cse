@@ -1,4 +1,5 @@
 # Google Custom Search Engine MCP Server
+[![smithery badge](https://smithery.ai/badge/@Richard-Weiss/mcp-google-cse)](https://smithery.ai/server/@Richard-Weiss/mcp-google-cse)
 
 A Model Context Protocol server that provides search capabilities using a CSE (custom search engine). This server enables LLMs to provide a regular google search term and returns the found search results.
 
@@ -41,6 +42,14 @@ With the default quota, you will get 100 searches per day for free. A tool call 
 
 
 ## Installation
+
+### Installing via Smithery
+
+To install Google Custom Search Engine for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@Richard-Weiss/mcp-google-cse):
+
+```bash
+npx -y @smithery/cli install @Richard-Weiss/mcp-google-cse --client claude
+```
 
 ### Using uv (recommended)
 
