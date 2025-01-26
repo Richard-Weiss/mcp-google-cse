@@ -1,0 +1,40 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - apiKey
+      - engineId
+    properties:
+      apiKey:
+        type: string
+        description: The API key for the custom search engine.
+      engineId:
+        type: string
+        description: The engine ID for the custom search engine.
+      serviceName:
+        type: string
+        default: customsearch
+        description: The name of the service, defaults to 'customsearch' if not set.
+      countryRegion:
+        type: string
+        description: Country restriction for search results.
+      geolocation:
+        type: string
+        default: us
+        description: Geolocation of the end-user performing the search.
+      resultLanguage:
+        type: string
+        default: lang_en
+        description: Language of the search results.
+      resultNum:
+        type: number
+        default: 10
+        description: The number of search results to return, range 1-10.
+  commandFunction:
+    # A function that produces the CLI command to start the MCP on stdio.
+    |-
+    (config) => ({ command: 'python', args: ['-m', 'mcp_google_cse'], env: { API_KEY: config.apiKey, ENGINE_ID: config.engineId, SERVICE_NAME: config.serviceName, COUNTRY_REGION: config.countryRegion, GEOLOCATION: config.geolocation, RESULT_LANGUAGE: config.resultLanguage, RESULT_NUM: config.resultNum } })
