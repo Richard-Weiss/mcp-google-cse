@@ -1,5 +1,4 @@
 # Google Custom Search Engine MCP Server
-[![smithery badge](https://smithery.ai/badge/@Richard-Weiss/mcp-google-cse)](https://smithery.ai/server/@Richard-Weiss/mcp-google-cse)
 
 A Model Context Protocol server that provides search capabilities using a CSE (custom search engine). This server enables LLMs to provide a regular google search term and returns the found search results.
 
@@ -9,6 +8,7 @@ You may also combine it with other tools to enable some kind of "deep search" or
 **The free quota is 100 searches (1 tool call == 1 search) per day, if you don't want to set up billing and this is insufficient for your use case, you should consider using another server.**
 
 <a href="https://glama.ai/mcp/servers/mieczol4lv"><img width="380" height="200" src="https://glama.ai/mcp/servers/mieczol4lv/badge" alt="Google Custom Search Engine Server MCP server" /></a>
+[![smithery badge](https://smithery.ai/badge/@Richard-Weiss/mcp-google-cse)](https://smithery.ai/server/@Richard-Weiss/mcp-google-cse)
 
 ## Available Tools
 
@@ -43,14 +43,6 @@ With the default quota, you will get 100 searches per day for free. A tool call 
 
 ## Installation
 
-### Installing via Smithery
-
-To install Google Custom Search Engine for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@Richard-Weiss/mcp-google-cse):
-
-```bash
-npx -y @smithery/cli install @Richard-Weiss/mcp-google-cse --client claude
-```
-
 ### Using uv (recommended)
 
 When using [`uv`](https://docs.astral.sh/uv/) no specific installation is needed. We will
@@ -68,6 +60,14 @@ After installation, you can run it as a script using:
 
 ```
 python -m mcp-google-cse
+```
+
+### Installing via Smithery
+
+To install Google Custom Search Engine for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@Richard-Weiss/mcp-google-cse):
+
+```bash
+npx -y @smithery/cli install @Richard-Weiss/mcp-google-cse --client claude
 ```
 
 ## Configuration
