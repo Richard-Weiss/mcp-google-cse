@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/richard-weiss-mcp-google-cse-badge.png)](https://mseep.ai/app/richard-weiss-mcp-google-cse)
+
 # Google Custom Search Engine MCP Server
 
 A Model Context Protocol server that provides search capabilities using a CSE (custom search engine). This server enables LLMs to provide a regular google search term and returns the found search results.
