@@ -66,7 +66,11 @@ async def google_search(search_term: str) -> List[TextContent]:
         lr=os.getenv('RESULT_LANGUAGE', 'lang_en'),
         num=os.getenv('RESULT_NUM', 10),
         fields='items(title,link,snippet)').execute()
-    results = response['items']
+    results = response.get('items', [])
+
+    if not results:
+        return [TextContent(type="text", text="No results found.")]
+
     __clean_up_snippets(results)
 
     text_contents = []
