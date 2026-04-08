@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "mcp-google-cse"
-version = "0.1.5"
+version = "0.1.5.1"
 description = "An MCP server for searching a custom Google search engine."
 readme = "README.md"
 requires-python = ">=3.11"
